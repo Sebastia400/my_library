@@ -56,19 +56,17 @@ char *my_revstr(char *str)
     return (dup);
 }
 
-int string_contain(char *str, char *to_find)
+char *my_strcpy(char *destination, char *source)
 {
-    int i = 0;
+    char *copy = destination;
 
-    for (int j = 0; str[j]; j++) {
-        if (str[j] == to_find[i])
-            i++;
-        else
-            i = 0;
-        if (i == my_strlen(to_find))
-            return (1);
+    while (*source != '\0') {
+        *destination = *source;
+        destination++;
+        source++;
     }
-    return (0);
+    *destination = '\0';
+    return (copy);
 }
 
 char *my_charcat(char *dest, char src)

@@ -44,3 +44,18 @@ int is_char_num(char c)
         return (1);
     return (0);
 }
+
+int is_str_in_str(char *str, char *to_find)
+{
+    int i = 0;
+
+    for (int j = 0; str[j]; j++) {
+        if (str[j] == to_find[i])
+            i++;
+        else
+            i = 0;
+        if (i == my_strlen(to_find))
+            return (1);
+    }
+    return (0);
+}

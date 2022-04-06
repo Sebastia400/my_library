@@ -37,6 +37,9 @@ int is_number(char *str);
 int my_ischar(char c);
 int is_char_in_str(int n, char *str);
 int is_char_num(char c);
+int is_str_in_str(char *str, char *to_find);
+
+int is_str_in_array(char **array, char *to_find);
 
 int my_strlen(char *str);
 int my_nbrlen(int nb);
@@ -54,7 +57,7 @@ char **str_to_array(char *arraytext, char separator);
 char *my_strcat(char *dest, char *src);
 char *my_strdup(char *str);
 char *my_revstr(char *str);
-int string_contain(char *str, char *to_find);
+char *my_strcpy(char *destination, char *source);
 char *my_charcat(char *dest, char src);
 
 #endif
