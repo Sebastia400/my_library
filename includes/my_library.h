@@ -34,6 +34,7 @@ char *ext_my_itoa(int nb, char *str, int neg);
 char *my_itoa(int nb);
 
 int is_number(char *str);
+int my_ischar(char c);
 int is_char_in_str(int n, char *str);
 int is_char_num(char c);
 
@@ -50,10 +51,10 @@ int quantity_sentences(int size_text, char *str, char delimiter);
 int len_sentence(char *arraytext, char delimiter);
 char **str_to_array(char *arraytext, char separator);
 
-
 char *my_strcat(char *dest, char *src);
 char *my_strdup(char *str);
 char *my_revstr(char *str);
 int string_contain(char *str, char *to_find);
+char *my_charcat(char *dest, char src);
 
 #endif

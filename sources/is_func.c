@@ -19,6 +19,13 @@ int is_number(char *str)
     return (1);
 }
 
+int my_ischar(char c)
+{
+    if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+        return (0);
+    return (1);
+}
+
 int is_char_in_str(int n, char *str)
 {
     int i = 0;

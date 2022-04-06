@@ -16,6 +16,7 @@ NAME	=	libmylibrary.a  ##Nombre archivo
 
 $(NAME):	$(OBJ)
 		ar rc $(NAME) $(OBJ) $(LIB)
+		rm -f $(OBJ)
 		cp $(NAME) ../
 ##		cp ./includes/bsprintf.h ../../includes/
 
@@ -29,4 +30,4 @@ clean:
 fclean: clean
 	rm -f $(NAME)
 
-re:	fclean all
+re:	fclean all clean

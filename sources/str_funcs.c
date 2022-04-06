@@ -70,3 +70,18 @@ int string_contain(char *str, char *to_find)
     }
     return (0);
 }
+
+char *my_charcat(char *dest, char src)
+{
+    int i = 0;
+    int n = 0;
+    char *temp = malloc(sizeof(char) * (my_strlen(dest) + 2));
+
+    while (dest[i] != '\0') {
+        temp[i] = dest[i];
+        i++;
+    }
+    temp[i] = src;
+    temp[i + 1] = '\0';
+    return (temp);
+}
