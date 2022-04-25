@@ -1,7 +1,7 @@
 name: chocolatine
 
 env:
-  MIRROR_URL: git@github.com:EpitechPromo2026/B-DOP-200-BAR-2-1-chocolatine-sebastia.gomez-dolc.git
+  MIRROR_URL: git@github.com:Sebastia400/my_library.git
   EXECUTABLE: chocolatine
 
 on:
@@ -51,15 +51,7 @@ jobs:
             timeout 2m make
           else
             exit 1
-          fi
-        run: |
-          if find ./ \("Makefile")
-          then
-            make clean
-            exit 0
-          else
-            exit 1
-          fi         
+          fi        
   run_tests:
     permissions:
       contents: read
